@@ -1,0 +1,8 @@
+.Motto{
+    display: flex;
+    justify-content: flex-start;
+    width:482px;
+    height: 145px;
+    margin-bottom: 30px;
+    margin-top:40px;
+}

@@ -1,0 +1,11 @@
+.container{
+	display:flex;
+	position: relative;
+	background-color:white;
+	transform: translateX(-50px);
+	width: 800px;
+	height: 400px;
+	perspective: 2000px;
+	margin-top: 80px;
+}
+

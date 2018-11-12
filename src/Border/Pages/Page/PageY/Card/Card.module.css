@@ -1,0 +1,49 @@
+.card{
+	background-color: aliceblue;
+	display: flex;
+	position: relative;
+	border: 2px solid grey;
+	width:400px;
+	height: 100%;
+	transform-style: preserve-3d;
+	transform-origin: left 100%; /* right 100%*/
+	transition: 2s linear;
+	animation-name: openBook; /* changePage*/
+	animation-fill-mode: both;	
+	animation-duration: 6s;
+
+}
+
+.front{
+	width: 400px;
+	height: 400px;
+	background-color: yellow;
+	border: 2px solid orangered;
+	color:white;
+	font-size: 15px;
+	font-weight: bold;
+	position: absolute;
+	position: relative;
+}
+
+.back{
+	width: 400px;
+	background-color: rgb(241, 253, 63);
+	border: 2px solid orange;
+	color:white;
+	font-size: 15px;
+	font-weight: bold;
+	position: absolute;
+	transform: rotateY(180deg);
+}
+
+@keyframes changePage{
+	from{transform: rotateY(0deg);}
+	to{transform: rotateY(180deg)}
+}
+
+@keyframes openBook{
+	0%{transform: translate(0px);}
+	50%{transform: rotateY(-179deg);}
+	100%{transform:rotateY(0deg); transform-origin: left 100%}
+}

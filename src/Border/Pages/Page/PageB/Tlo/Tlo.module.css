@@ -1,0 +1,38 @@
+.Tlo{
+    width:600px;
+    height: 400px;
+    transform: translateX(-400px);
+}
+
+.right{
+
+    width:50%;
+    height: 100%;
+    background-image: url('../../../../../asset/images/pageb/str1.png')
+
+}
+
+.left{
+    width:50%;
+    height: 100%;
+
+}
+
+.leftOne{
+    width:50%;
+    height: 100%;
+    background-image: url('../../../../../asset/images/pageb/str2.png');
+    opacity:1;
+}
+
+
+.container{
+    display:flex;
+	transform: translateX(-50px);
+	width: 800px;
+	height: 400px;
+	perspective: 2000px;
+    margin-top: 65px;
+}
+
+
